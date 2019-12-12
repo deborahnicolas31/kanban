@@ -1,0 +1,27 @@
+<h1>Kanban</h1>
+
+<ul>
+        <li><a href="#1">Informations</a></li>
+        <li><a href="#2">Budget</a></li>
+        <li><a href="#3">Ressources</a></li>
+        <li><a href="#4">Gantt</a></li>
+        <li><a href="#5">Kanban</a></li>
+        <li><a href="#6">Risques</a></li>
+</ul>
+
+<h3 class="telecharger">Kanban du projet :</h3>
+
+<button class="telecharger"><input type="image" id="image" height="20px"
+    src="../../assets/download.png">Télécharger en PDF</button>
+
+<div class="general">
+
+    <div class="kanban">
+    <app-list *ngFor="let list of lists" [list]="list" [cardStore]="cardStore"></app-list>
+    </div>
+
+    <div class="commentaire">
+        <textarea rows="10" cols="33" >Commentaires...</textarea>
+    </div>
+
+</div>
