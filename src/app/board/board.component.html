@@ -20,8 +20,23 @@
     <app-list *ngFor="let list of lists" [list]="list" [cardStore]="cardStore"></app-list>
     </div>
 
-    <div class="commentaire">
-        <textarea rows="10" cols="33" >Commentaires...</textarea>
+    <div class="droite">
+    
+        <div class ="Commentaires">
+            <textarea rows="10" cols="33" >Commentaires...</textarea>
+        </div>
+
+        <div class="document">
+            <h3 class="titredoc">Joindre des documents :</h3>
+            <br>
+
+            <input type="file"
+                id="docs" name="documents"
+                accept="document/pdf, document/png">
+        </div>
+
     </div>
+
+    
 
 </div>

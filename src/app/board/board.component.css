@@ -2,13 +2,12 @@ div {
     background: white;
     display: flex;
     padding: 0 5px;
-    overflow-x: scroll;
     margin-top: 10px;
 }
 
 h3, button {
     display: inline-flex;
-
+    margin-top: 30px;
 }
 
 h3 {
@@ -18,6 +17,9 @@ h3 {
 button {
     background: #e9e6df;
     border-color: #acadad;
+    border-radius: 3px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 .kanban {
@@ -26,12 +28,13 @@ button {
     margin-left: 30px;
     margin-bottom:50px;
     text-align: center;
+    overflow-x: scroll;
 }
 
 textarea{
     height: 150px;
     resize: none;
-    margin-left: 35px;
+    margin-left: 30px;
     margin-right: auto;
     border-radius: 3px;
 }
@@ -40,15 +43,40 @@ h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    color:#747b81;
+    text-transform: uppercase;
 }
 
 .telecharger {
     margin-left:50px;
 }
 
-button {
-    border-radius: 3px;
+
+.document{
+    position: absolute;
+    margin-top :200px;
+    margin-left: 5px;
 }
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+#docs {
+    position: flex;
+    margin-top: 65px;
+    margin-left:30px;
+    margin-right: auto;
+}
+
+.titredoc{
+    position: absolute;
+    text-align: center;
+    margin-right: auto;
+    margin-left:20px;
+}
+
 
 /* POUR LES ONGLETS ----------------------------------------------*/
 
@@ -57,7 +85,7 @@ ul{
     width: 500px;
     margin: 80px auto;
     margin-left:50px;
-    margin-bottom:30px;
+    margin-bottom:0px;
     margin-top :30px;
     padding: 0;
     background: white;
@@ -79,11 +107,11 @@ ul li a{
     padding: 8px 8px 17px 8px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
     box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset, 
-                0 -1px 0 hsl(0, 0%, 4%) inset, 
-                0 -2px 0 hsl(200, 4%, 15%) inset, 
-                0 -3px 0 hsl(206, 5%, 28%) inset, 
-                0 -4px 0 hsl(214, 4%, 38%) inset, 
-                0 -5px 0 hsl(208, 7%, 44%) inset;
+                0 -1px 0 #020303 inset, 
+                0 -2px 0 #577283 inset, 
+                0 -3px 0 #768fa0 inset, 
+                0 -4px 0 #a7bdca inset, 
+                0 -5px 0 #e2ecf3 inset;
 
     transition: all .3s .1s;
 }
@@ -97,14 +125,16 @@ ul li:last-child a{
 
 ul li a:hover, 
 ul li a:focus{
-    background:linear-gradient(rgb(110, 133, 141), rgb(255, 255, 255));
-    background: -webkit-linear-gradient(rgb(110, 133, 141), rgb(255, 255, 255));
-    background:    -moz-linear-gradient(rgb(110, 133, 141), rgb(255, 255, 255));
-    background:     -ms-linear-gradient(rgb(110, 133, 141), rgb(255, 255, 255));
-    background:      -o-linear-gradient(rgb(110, 133, 141), rgb(255, 255, 255));
-    background:         linear-gradient(rgb(110, 133, 141), rgb(255, 255, 255));
+    background:linear-gradient(#747b81, rgb(255, 255, 255));
+    background: -webkit-linear-gradient(#747b81, rgb(255, 255, 255));
+    background:    -moz-linear-gradient(#747b81, rgb(255, 255, 255));
+    background:     -ms-linear-gradient(#747b81, rgb(255, 255, 255));
+    background:      -o-linear-gradient(#747b81, rgb(255, 255, 255));
+    background:         linear-gradient(#747b81, rgb(255, 255, 255));
     padding: 8px 25px 17px 25px;
     transition: all .3s 0s;
+    color:white;
+    font-weight: bold;
 } 
 
 ul li a:active{
