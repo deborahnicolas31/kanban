@@ -20,12 +20,12 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-//permet d'indiquer que si l'événement n'est pas traité explicitement, son action par défaut ne doit pas être prise en compte
+// permet d'indiquer que si l'événement n'est pas traité explicitement, son action par défaut ne doit pas être prise en compte
   allowDrop($event) {
     $event.preventDefault();
   }
 
-//permet de changer la carte de liste lors du drag and drop
+// permet de changer la carte de liste lors du drag and drop
 
   drop($event) {
     $event.preventDefault();
@@ -34,17 +34,17 @@ export class ListComponent implements OnInit {
     let target = $event.target;
     const targetClassName = target.className;
 
-    while( target.className !== 'list') {
+    while ( target.className !== 'list') {
       target = target.parentNode;
     }
     target = target.querySelector('.cards');
 
-    if(targetClassName === 'card') {
+    if (targetClassName === 'card') {
       $event.target.parentNode.insertBefore(document.getElementById(data), $event.target);
-    } else if(targetClassName === 'list__title') {
+    } else if (targetClassName === 'list__title') {
       if (target.children.length) {
         target.insertBefore(document.getElementById(data), target.children[0]);
-      }else {
+      } else {
         target.appendChild(document.getElementById(data));
       }
     } else {
@@ -53,7 +53,7 @@ export class ListComponent implements OnInit {
 
   }
 
-  //Ajoute la carte
+  // Ajoute la carte
 
   onEnter(value: string) {
     const cardId =  this.cardStore.newCard(value);

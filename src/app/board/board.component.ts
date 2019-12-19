@@ -39,7 +39,7 @@ export class BoardComponent implements OnInit {
     this.lists = lists;
   }
 
-  //les données de la table sont de type MockData, c'est un format de texte
+  // les données de la table sont de type MockData, c'est un format de texte
 
   ngOnInit() {
     this.setMockData();

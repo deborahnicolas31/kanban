@@ -1,4 +1,4 @@
-//On créait les cartes
+// On créait les cartes
 
 export class CardSchema {
     id: string;
