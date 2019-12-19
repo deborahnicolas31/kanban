@@ -7,6 +7,11 @@ import { ListSchema } from '../ListSchema';
   templateUrl: './board.component.html',
   styleUrls: ['./board.component.css']
 })
+
+
+
+// On récupère les listes de cartes et on définit le nom de chaque liste
+
 export class BoardComponent implements OnInit {
   cardStore: CardStore;
   lists: ListSchema[];
@@ -33,6 +38,8 @@ export class BoardComponent implements OnInit {
     ];
     this.lists = lists;
   }
+
+  //les données de la table sont de type MockData, c'est un format de texte
 
   ngOnInit() {
     this.setMockData();

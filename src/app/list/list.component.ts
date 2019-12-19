@@ -20,9 +20,12 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+//permet d'indiquer que si l'événement n'est pas traité explicitement, son action par défaut ne doit pas être prise en compte
   allowDrop($event) {
     $event.preventDefault();
   }
+
+//permet de changer la carte de liste lors du drag and drop
 
   drop($event) {
     $event.preventDefault();
@@ -49,6 +52,8 @@ export class ListComponent implements OnInit {
     }
 
   }
+
+  //Ajoute la carte
 
   onEnter(value: string) {
     const cardId =  this.cardStore.newCard(value);

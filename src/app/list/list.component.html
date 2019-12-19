@@ -1,3 +1,6 @@
+<!--Affiche les listes et récupère les cartes-->
+<!--On ajoute aussi la fonction qui permet de créer une nouvelle tâche-->
+
 <div class="list" (dragover)="allowDrop($event)" (drop)="drop($event)">
     <p class="list__title"><strong>{{list.name}}</strong></p>
     <div class="cards">

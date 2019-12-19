@@ -1,3 +1,5 @@
+/* Apparence de la page ----------------------------------------------*/
+
 div {
     background: white;
     display: flex;
@@ -22,6 +24,16 @@ button {
     padding-bottom:5px;
 }
 
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color:#747b81;
+    text-transform: uppercase;
+}
+
+/* Modifications sur le kanban ----------------------------------------------*/
+
 .kanban {
     background: #f6f5f0;
     height: 65vh;
@@ -31,6 +43,8 @@ button {
     overflow-x: scroll;
 }
 
+/* Zone de texte Commentaires ----------------------------------------------*/
+
 textarea{
     height: 150px;
     resize: none;
@@ -39,13 +53,7 @@ textarea{
     border-radius: 3px;
 }
 
-h1 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color:#747b81;
-    text-transform: uppercase;
-}
+/* Modification apparence ajout documents ----------------------------------------------*/
 
 .telecharger {
     margin-left:50px;

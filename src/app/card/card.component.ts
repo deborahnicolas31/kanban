@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
   ngOnInit() {
   }
 
+// permet le drag and drop
   dragStart(ev) {
     ev.dataTransfer.setData('text', ev.target.id);
   }

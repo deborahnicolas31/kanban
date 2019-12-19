@@ -1,5 +1,9 @@
 import {CardSchema} from './cardschema';
 
+// Permet de manipuler et conserver les cartes
+//Ces fonctions seront appelees dans les components
+
+
 export class CardStore {
   cards: Object = {};
   lastid = -1;
